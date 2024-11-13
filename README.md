@@ -1,6 +1,6 @@
 
 
-This is a re-implementation of the  [TASO compiler](https://github.com/jiazhihao/TASO) using HBLS and PGLS. HBLS combines a greedy strategy with the utilization of historical records to escape local optima. PGLS integrates a probabilistic approach within greedy strategies to accept computation graphs that exhibit performance degradation with a defined probability.
+This is a re-implementation of the  [TASO compiler](https://github.com/jiazhihao/TASO) using HBLS and PGLS. The first approach uses a memory-augmented heuristic to optimize computation graphs. To further enhance the efficiency of computation graph optimization, the second approach applies a simulated annealing-like strategy, allowing computation graphs with slightly degraded performance to be included in the candidate set with a certain probability.
 ## 1. Install
 
 HBLS and PGLS build on TASO, so they have the same hardware requirements as TASO. Specifically, you will need GPUs and drivers compatible with nvidia-docker.
