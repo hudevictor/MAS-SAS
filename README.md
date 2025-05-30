@@ -22,4 +22,4 @@ python bert.py
 ```
 ## 3. Summary
 
-The optimizer replaces TASO's backtracking search with HBLS and PGLS while utilizing TASO's synthesized rewrite rules. It leverages TASO's infrastructure to maintain tensor metadata, such as shape, and employs TASO's cost function to directly execute DL operators.
+The optimizer replaces TASO's backtracking search with MAS and SAS while utilizing TASO's synthesized rewrite rules. It leverages TASO's infrastructure to maintain tensor metadata, such as shape, and employs TASO's cost function to directly execute DL operators.
